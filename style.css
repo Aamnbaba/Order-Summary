@@ -1,0 +1,153 @@
+:root {
+  --Pale-blue: #e0e8ff;
+  --Bright-blue: #3829e0;
+  --Very-pale-blue: #f5f7ff;
+  --Desaturated-blue: #7280a7;
+  --Dark-blue: #1f2f56;
+  --fw-900: 900;
+  --box-shadow: 0px 15px 25px var(--Desaturated-blue);
+  --btn-shadow: 0px 5px 15px var(--Desaturated-blue);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-weight: var(--fw-900);
+}
+
+p {
+  color: var(--Desaturated-blue);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.flex,
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.flex-row {
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: var(--Pale-blue);
+  padding: 5rem 1.25rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.card {
+  max-width: 390px;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+  gap: 1.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.conten-part {
+  padding: 0rem 2.5rem 3rem;
+  width: 100%;
+}
+
+.price {
+  /* max-width: 310px; */
+  width: 100%;
+  background-color: var(--Very-pale-blue);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.price-left {
+  gap: 1rem;
+}
+
+.price-left img {
+  width: 28%;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  background-color: var(--Bright-blue);
+  color: var(--Very-pale-blue);
+  font-weight: 700;
+  font-size: 0.825rem;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--btn-shadow);
+}
+
+#no-change {
+  text-decoration: underline;
+  color: blue;
+  font-size: 0.825rem;
+  font-weight: var(--fw-900);
+}
+
+.btn-class {
+  width: 100%;
+}
+
+.title {
+  gap: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #7280a7;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-class > a:nth-child(2) {
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 0.8rem;
+  }
+
+  .card {
+    max-width: none;
+    width: 80%;
+  }
+
+  body {
+    height: 100vh;
+    padding: 2rem 0.2rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .conten-part {
+    padding: 0.5rem 1.5rem;
+  }
+}
