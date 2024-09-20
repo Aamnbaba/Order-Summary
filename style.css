@@ -51,6 +51,7 @@ body {
   padding: 5rem 1.25rem;
   text-align: center;
   line-height: 1.5;
+  min-height: 100vh;
 }
 
 .card {
